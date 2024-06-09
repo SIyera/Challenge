@@ -1,0 +1,133 @@
+
+@import url(https://db.onlinewebfonts.com/c/69dbc1186412d7831b88d8a78a360360?family=DIN+Condensed+Web);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 3% 0%;
+}
+
+
+
+.animals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.species {
+    position: relative;
+    gap: 1px;
+    margin: 0px;
+    padding: 0px;
+    background: radial-gradient(#111 50%, #000 100%);
+    overflow: hidden; 
+    transition: 1s ease;   
+}
+
+
+.region {
+    position: absolute;
+    height: 78px;
+    bottom: 60px;
+    text-align: justify;
+    gap: 0px;
+    opacity: 0px;  
+    left: 30px; 
+    transition: 1s ease;
+}
+
+.species p1 {
+    font-family: din condensed web;   
+    font-style: normal; 
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    color: #ffffff;
+    width: 213px;
+    height: 76px;
+    gap: 0px;
+
+}
+.species p {
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16.02px;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.species .link {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    text-align: left;
+    left: 30px;
+}
+
+ .link a {
+    color:rgb(0, 225, 255);
+    font-family: poppins;
+    font-size: 14px;
+    line-height: 4.02px;
+    text-align: center;
+}
+
+.species .link i{
+    color: aqua;
+    font-size: 8px;
+    line-height: 4.02px;
+    
+    
+}
+
+
+.species:hover img {
+    filter: blur(3px) grayscale(600%);
+    transform: scale(1.1);
+    opacity: 0.4;    
+}
+
+.species:hover .region {    
+    bottom: 100px;
+    transition: 1s ease;   
+}
+
+.species:hover .link {
+    display: block;
+    transition: 0s none;  
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .region {
+        display: none;
+    }
+
+    .link a {
+        display: none;
+    }
+    .link i {
+        display: none;
+    }
+    
+    .animals {
+        width: 400;
+        height: 600px;
+        top: 1490px;
+        opacity: 0px;        
+    
+    }
+    .animals img{
+        width: 98.5px;
+        height: 600px;
+       
+    }
+    
+}
